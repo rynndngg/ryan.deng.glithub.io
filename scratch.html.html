@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Deng - Professional Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to custom stylesheet -->
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif; /* Use Roboto font for better readability */
+            color: #333; /* Set default text color */
+            background-color: #f8f8f8; /* Set background color */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #2c3e50; /* Set header background color */
+            color: #fff; /* Set header text color */
+            padding: 20px; /* Add padding to header */
+            text-align: center; /* Center align header content */
+        }
+
+        header h1 {
+            margin: 0; /* Remove margin for h1 */
+            font-size: 72px; /* Set font size for name */
+            font-weight: bold; /* Set name font weight */
+            text-decoration: underline; /* Underline name */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove default list style */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+            text-align: center; /* Center align navigation links */
+            border: 1px solid #fff; /* Add border around navigation links */
+            border-radius: 5px; /* Add border radius to navigation links */
+            display: inline-block; /* Display navigation links inline */
+            margin-top: 20px; /* Add margin above navigation links */
+        }
+
+        nav ul li {
+            display: inline; /* Display navigation links inline */
+            margin-right: 20px; /* Add margin between navigation links */
+        }
+
+        nav ul li a {
+            color: #fff; /* Set navigation link color */
+            text-decoration: none; /* Remove default underline */
+            font-size: 18px; /* Set font size for navigation links */
+            text-decoration: underline; /* Underline navigation links */
+        }
+
+        /* Section styles */
+        section {
+            padding: 40px 20px; /* Add padding to sections */
+            text-align: center; /* Center align section content */
+        }
+
+        .container {
+            max-width: 800px; /* Set maximum width for content */
+            margin: 0 auto; /* Center align content */
+        }
+
+        h2 {
+            color: #2c3e50; /* Set heading color */
+            font-size: 72px; /* Set heading font size */
+            margin-bottom: 30px; /* Add margin below headings */
+            text-decoration: underline; /* Underline headings */
+        }
+
+        p {
+            font-size: 18px; /* Set paragraph font size */
+            line-height: 1.6; /* Set line height for better readability */
+            margin-bottom: 20px; /* Add margin below paragraphs */
+        }
+
+        img {
+            max-width: 100%; /* Make images responsive */
+            height: auto; /* Preserve aspect ratio */
+            display: block; /* Center align images */
+            margin: 0 auto; /* Center align images */
+            margin-bottom: 20px; /* Add margin below images */
+        }
+
+        /* Resume section styles */
+        .resume-item {
+            text-align: left; /* Left align resume items */
+            border: 2px solid #333; /* Add border around resume items */
+            border-radius: 10px; /* Add border radius to resume items */
+            padding: 20px; /* Add padding to resume items */
+            margin-bottom: 40px; /* Add margin below resume items */
+        }
+
+        .resume-item h3 {
+            font-weight: bold; /* Set font weight for resume headings */
+            text-decoration: underline; /* Underline resume headings */
+        }
+
+        .resume-item p {
+            font-weight: bold; /* Set font weight for resume item texts */
+            margin-bottom: 10px; /* Add margin below resume item texts */
+        }
+
+        .resume-item ul {
+            list-style-type: none; /* Remove default list style */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        .resume-item ul li {
+            margin-bottom: 5px; /* Add margin between resume list items */
+        }
+
+        /* Hobbies section styles */
+        #hobbies {
+            border: 2px solid #333; /* Add border around hobbies section */
+            border-radius: 10px; /* Add border radius to hobbies section */
+            padding: 20px; /* Add padding to hobbies section */
+            margin-bottom: 40px; /* Add margin below hobbies section */
+        }
+
+        .hobby-item {
+            display: inline-block; /* Display hobby items inline */
+            vertical-align: top; /* Align hobby items to the top */
+            width: 30%; /* Set width for hobby items */
+            margin-right: 2%; /* Add margin between hobby items */
+        }
+
+        .hobby-item:last-child {
+            margin-right: 0; /* Remove margin from last hobby item */
+        }
+
+        .hobby-item img {
+            max-width: 100%; /* Make images responsive */
+            height: auto; /* Preserve aspect ratio */
+            display: block; /* Center align images */
+            margin: 0 auto 10px; /* Add margin below images */
+        }
+
+        #video-caption {
+            font-weight: bold; /* Set font weight for video caption */
+        }
+
+        #video-arrow {
+            color: #fff; /* Set arrow color */
+            font-size: 36px; /* Set arrow font size */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #34495e; /* Set footer background color */
+            color: #fff; /* Set footer text color */
+            text-align: center; /* Center align footer content */
+            padding: 20px; /* Add padding to footer */
+            position: fixed; /* Fix footer position */
+            width: 100%; /* Set footer width */
+            bottom: 0; /* Align footer to bottom */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Ryan Deng</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me section -->
+    <section id="home">
+        <div class="container">
+            <h2>About Me</h2>
+            <div style="background-color: #fff; padding: 20px; margin-bottom: 20px;"> <!-- Add box around About Me content -->
+                <p>Welcome to my professional website. I'm Ryan Deng, a motivated and ambitious individual passionate about accounting, finance, and technology. Explore my resume and hobbies to learn more about me.</p>
+                <img src="personal_photo.jpg" alt="Personal Photo" style="width: 100%; max-width: 500px;"> <!-- Adjust photo size -->
+            </div>
+        </div>
+    </section>
+
+  <!-- Resume section -->
+<section id="resume">
+    <div class="container">
+        <h2 style="color: #2c3e50;">RESUME</h2>
+        <div class="resume-item">
+            <h3 style="border-bottom: 2px solid #2c3e50; padding-bottom: 10px; margin-bottom: 20px;">Education</h3>
+            <div style="border: 2px solid #333; border-radius: 10px; padding: 20px; margin-bottom: 40px;">
+                <p><strong>Brigham Young University, Marriott School of Business</strong><br>
+                    Bachelor of Science in Accounting - Expected Graduation (Spring 2026)<br>
+                    Provo, Utah</p>
+                <ul>
+                    <li><strong>Major GPA:</strong> 4.00 out of 4.00 | <strong>ACT:</strong> 33</li>
+                    <li><strong>Presidency in Accounting Society, Membership in Speech and Debate & Business Strategy Society</strong></li>
+                </ul>
+                <p><strong>University of Utah, David Eccles School of Business</strong><br>
+                    Emphasis in Finance & Information systems<br>
+                    Salt Lake City, Utah</p>
+                <ul>
+                    <li><strong>GPA:</strong> 3.97 out of 4.00</li>
+                    <li><strong>Honors:</strong> Business Scholar, Honors College</li>
+                </ul>
+            </div>
+        </div>
+        <div class="resume-item">
+            <h3 style="border-bottom: 2px solid #2c3e50; padding-bottom: 10px; margin-bottom: 20px;">Experience</h3>
+            <div style="border: 2px solid #333; border-radius: 10px; padding: 20px; margin-bottom: 40px;">
+                <p><strong>MatchU</strong><br>
+                    Founder & Chief Executive Officer<br>
+                    Salt Lake City, Utah</p>
+                <ul>
+                    <li>Led a team of 3 to generate $10,000 in revenue in 2 months.</li>
+                    <li>Created the mobile app's user interface for seamless consumer experience.</li>
+                    <li>Pitched to 100+ investors, acquiring $3,000 in funding through two partnerships.</li>
+                </ul>
+                <p><strong>Brigham Young University Vaccine Creation</strong><br>
+                    Research Assistant<br>
+                    Provo, UT</p>
+                <ul>
+                    <li>Drove crucial data analysis for the synthesis of specific antigens.</li>
+                    <li>Contributed significantly to the creation of a carbohydrate-based vaccine for bacterial pathogens.</li>
+                </ul>
+                <p><strong>S&D Lipopharma LLC</strong><br>
+                    Client Relations and Operations Intern<br>
+                    Provo, UT</p>
+                <ul>
+                    <li>Achieved $100,000+ in sales revenue by building and maintaining relationships with key clients.</li>
+                    <li>Redesigned company website, resulting in a 376% increase in traffic to the overall website.</li>
+                    <li>Coordinated timely chemical logistics and deliveries for 5 key clients.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="resume-item">
+            <h3 style="border-bottom: 2px solid #2c3e50; padding-bottom: 10px; margin-bottom: 20px;">Campus Engagements</h3>
+            <div style="border: 2px solid #333; border-radius: 10px; padding: 20px; margin-bottom: 40px;">
+                <p><strong>Daniel Fund Ethics Competition – Winner</strong><br>
+                    Nov 2022</p>
+                <ul>
+                    <li>Competed with team members on an ethic case that focused on the ethicality of intrusion and disclosure of private facts. Presented ethical based solutions and placed 2nd.</li>
+                </ul>
+                <p><strong>Hack-A-House Competition – Winner</strong><br>
+                    Sep 2022-Oct 2022</p>
+                <ul>
+                    <li>Ideated solution for homelessness crisis using deed restricted properties.</li>
+                    <li>Won National Competition and received the People’s Choice Award.</li>
+                </ul>
+                <p><strong>Who Lives Challenge – Competitor</strong><br>
+                    Nov 2022</p>
+                <ul>
+                    <li>Constructed Adobe Spark Page for Who Lives Charity.</li>
+                    <li>Generated over 30,000 engagements for Who Lives Charity which contributed to increased donations.</li>
+                </ul>
+                <p><strong>Speech and Debate – 4X Varsity Debate Team Captain (Congress)</strong><br>
+                    Aug 2018-May 2022</p>
+                <ul>
+                    <li>Guided two junior varsity debaters to win state championships in LD & PF.</li>
+                    <li>Won 10 Regional, 2 State Championships and National Quarter Finalist Championship (CX).</li>
+                </ul>
+            </div>
+<ol>
+    <li>Item 1</li>
+    <li>Item 2
+        <ul>
+            <li>Subitem 2.1</li>
+            <li>Subitem 2.2</li>
+        </ul>
+    </li>
+    <li>Item 3</li>
+</ol>
+
+        </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Page Title</title>
+</head>
+<body>
+    <!-- Your other content here -->
+
+    <!-- Tableau visualization -->
+    <div class='tableauPlaceholder' id='viz1712873620748' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='HR_Dashboard ' src='https://public.tableau.com/static/images/HR/HRDashboardRWFD2024/HR_Dashboard/1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='HRDashboardRWFD2024/HR_Dashboard' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/HR/HRDashboardRWFD2024/HR_Dashboard/1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>                
+    <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1712873620748');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        vizElement.style.width='1250px';
+        vizElement.style.height='827px';                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+
+    <!-- Your other content here -->
+</body>
+</html>
+
+    </div>
+</section>
+
+
+    <!-- Hobbies section -->
+    <section id="hobbies">
+        <div class="container">
+            <h2>My Favorite Hobby: Film</h2>
+            <div style="background-color: #fff; padding: 20px; margin-bottom: 20px;"> <!-- Add box around Hobbies content -->
+                <div class="hobby-item">
+                    <img src="street.jpg" alt="street" style="width: 100%; max-width: 300px;"> <!-- Adjust photo size -->
+                    <p><strong>Night photography</strong> (I shot this in downtown Toronto (shoutout Canada)</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="portrait.jpg" alt="portrait" style="width: 100%; max-width: 300px;"> <!-- Adjust photo size -->
+                    <p><strong>Phillip Luprcel</strong>, (Model shoots with Calvin Klein)</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="landscape.jpg" alt="landscape" style="width: 100%; max-width: 300px;"> <!-- Adjust photo size -->
+                    <p><strong>Here's a random cute photo I took in Switzerland</strong></p>
+                </div>
+                <div style="margin-top: 20px;"> <!-- Add margin above video link -->
+                    <p id="video-caption"><strong>Here is more about my hobby</strong></p> <!-- Add caption for video link -->
+                    <a href="https://www.youtube.com/watch?v=Ax4Yn16Rw8s" target="_blank"><span id="video-arrow">&#9658;</span> <!-- Add white arrow icon for video link -->
+                
+                    <a href="#top">Back to top</a>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>CLick here FOR YOUTUBE VIDEO LINK </p>
+    </footer>
+</body>
+</html>
+
